@@ -10,4 +10,23 @@ package Model;
  */
 public interface InterComboBase {
     
+String getTipo();
+
 }
+
+// Clases concretas de combos base
+class HamburguesaCombo implements InterComboBase {
+    public String getTipo() { return "Hamburguesa"; }
+}
+
+class PolloCombo implements InterComboBase {
+    public String getTipo() { return "Pollo"; }
+}
+
+class VegetarianoCombo implements InterComboBase {
+    public String getTipo() { return "Vegetariano"; }
+    
+    
+  
+}
+

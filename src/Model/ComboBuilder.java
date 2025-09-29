@@ -8,6 +8,34 @@ package Model;
  *
  * @author jerem
  */
-public class ComboBuilder {
-    
+class ComboBuilder implements InterComboBuilder {
+    private Combo combo;
+
+    public ComboBuilder() {
+        this.combo = new Combo();
+    }
+
+    public InterComboBuilder setBase(InterComboBase base) {
+        combo.setTipoBase(base.getTipo());
+        return this;
+    }
+
+    public InterComboBuilder setBebida(String bebida) {
+        combo.setBebida(bebida);
+        return this;
+    }
+
+    public InterComboBuilder setAcompanamiento(String acomp) {
+        combo.setAcompanamiento(acomp);
+        return this;
+    }
+
+    public InterComboBuilder setExtra(String extra) {
+        combo.setExtra(extra);
+        return this;
+    }
+
+    public Combo build() {
+        return combo;
+    }
 }
