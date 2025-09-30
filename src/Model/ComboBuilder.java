@@ -8,7 +8,7 @@ package Model;
  *
  * @author jerem
  */
-class ComboBuilder implements InterComboBuilder {
+public class ComboBuilder implements InterComboBuilder {
     private Combo combo;
 
     public ComboBuilder() {

@@ -8,7 +8,7 @@ package Model;
  *
  * @author jerem
  */
-class Combo {
+public class Combo {
     //Variables del combo
     private String tipoBase;
     private String bebida;

@@ -8,7 +8,7 @@ package Model;
  *
  * @author jerem
  */
-public class ComoboFactory {
+public class ComboFactory {
     //creacion  de los tipo de combos
     public static InterComboBase crearCombo(String tipo) {
         switch (tipo.toLowerCase()) {
