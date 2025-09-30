@@ -4,14 +4,11 @@
  */
 package View;
 import Model.Combo;
-/**
- *
- * @author jerem
- */
+
 import java.util.Scanner;
 
 public class ComboView {
-   private Scanner sc = new Scanner(System.in, "UTF-8");
+   private Scanner sc = new Scanner(System.in);
    
     // Método auxiliar para leer opciones válidas
     private int leerOpcion(int min, int max) {
@@ -19,6 +16,7 @@ public class ComboView {
         
         while (true) {
             System.out.print("Ingrese opción (" + min + "-" + max + "): ");
+            
             if (sc.hasNextInt()) {
                 op = sc.nextInt();
                 if (op >= min && op <= max) {
@@ -33,6 +31,11 @@ public class ComboView {
         }
     }
 
+    
+    
+    
+    
+    
     public String elegirBase() {
         System.out.println("\nElige tu combo base:");
         System.out.println("1. Hamburguesa\n2. Pollo\n3. Vegetariano");
@@ -57,7 +60,7 @@ public class ComboView {
         }
     }
 
-    public String elegirAcompanamiento() {
+    public String elegirAcompañamiento() {
         System.out.println("\nElige tu acompañamiento:");
         System.out.println("1. Papas Fritas\n2. Ensalada\n3. Arroz");
         int op = leerOpcion(1, 3);

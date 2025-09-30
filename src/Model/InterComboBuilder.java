@@ -12,7 +12,7 @@ public interface InterComboBuilder {
     
 InterComboBuilder setBase(InterComboBase base);
     InterComboBuilder setBebida(String bebida);
-    InterComboBuilder setAcompanamiento(String acomp);
+    InterComboBuilder setAcompañamiento(String acomp);
     InterComboBuilder setExtra(String extra);
     Combo build();
 }

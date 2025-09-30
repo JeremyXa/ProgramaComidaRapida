@@ -26,13 +26,13 @@ public class ComboController {
         InterComboBase base = ComboFactory.crearCombo(baseElegida);
 
         String bebida = view.elegirBebida();
-        String acomp = view.elegirAcompanamiento();
+        String acomp = view.elegirAcompañamiento();
         String extra = view.elegirExtra();
 
         Combo combo = new ComboBuilder()
                 .setBase(base)
                 .setBebida(bebida)
-                .setAcompanamiento(acomp)
+                .setAcompañamiento(acomp)
                 .setExtra(extra)
                 .build();
 

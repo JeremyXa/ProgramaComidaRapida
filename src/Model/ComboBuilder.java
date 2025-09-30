@@ -25,8 +25,8 @@ public class ComboBuilder implements InterComboBuilder {
         return this;
     }
 
-    public InterComboBuilder setAcompanamiento(String acomp) {
-        combo.setAcompanamiento(acomp);
+    public InterComboBuilder setAcompañamiento(String acomp) {
+        combo.setAcompañamiento(acomp);
         return this;
     }
 

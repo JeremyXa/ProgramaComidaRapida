@@ -12,9 +12,14 @@ public class ComboFactory {
     //creacion  de los tipo de combos
     public static InterComboBase crearCombo(String tipo) {
         switch (tipo.toLowerCase()) {
-            case "hamburguesa": return new HamburguesaCombo();
-            case "pollo": return new PolloCombo();
-            case "vegetariano": return new VegetarianoCombo();
+            case "hamburguesa": 
+                return new HamburguesaCombo();
+           
+            case "pollo": 
+                return new PolloCombo();
+           
+            case "vegetariano": 
+                return new VegetarianoCombo();
             default: return null;
         }
     }
